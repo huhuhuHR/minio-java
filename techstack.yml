@@ -1,0 +1,242 @@
+repo_name: huhuhuHR/minio-java
+report_id: 34e04a8cd3d8a542476bfdaeb1e3b604
+version: 0.1
+repo_type: Public
+timestamp: '2024-07-02T01:27:02+00:00'
+requested_by: benjamin3322
+provider: github
+branch: master
+detected_tools_count: 15
+tools:
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/huhuhuHR/minio-java
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/huhuhuHR/minio-java
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/huhuhuHR/minio-java/blob/master/.github/workflows/codeql-analysis.yml
+  detection_source: ".github/workflows/codeql-analysis.yml"
+  last_updated_by: Bala FA
+  last_updated_on: 2023-06-19 15:00:02.000000000 Z
+- name: Gradle
+  description: A powerful build system for the JVM
+  website_url: https://www.gradle.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Java Build Tools
+  image_url: https://img.stackshare.io/service/975/gradlephant-social-black-bg.png
+  detection_source_url: https://github.com/huhuhuHR/minio-java/blob/master/build.gradle
+  detection_source: build.gradle
+  last_updated_by: Bala FA
+  last_updated_on: 2023-06-19 15:00:02.000000000 Z
+- name: org.apache.commons:commons-compress
+  description: Apache Commons Compress software defines an API for working with compression
+    and archive formats
+  version: 1.24.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/huhuhuHR/minio-java/blob/master/build.gradle
+  detection_source: build.gradle
+  last_updated_by: Ivan
+  last_updated_on: 2023-09-19 10:23:21.000000000 Z
+  vulnerabilities:
+  - name: 'Apache Commons Compress: OutOfMemoryError unpacking broken Pack200 file'
+    cve_id: CVE-2024-26308
+    cve_url: https://github.com/advisories/GHSA-4265-ccf5-phj5
+    detected_date: Feb 21
+    severity: high
+    first_patched: 1.26.0
+  - name: 'Apache Commons Compress: Denial of service caused by an infinite loop for
+      a corrupted DUMP file'
+    cve_id: CVE-2024-25710
+    cve_url: https://github.com/advisories/GHSA-4g9r-vxhx-9pgx
+    detected_date: Feb 29
+    severity: high
+    first_patched: 1.26.0
+- name: org.xerial.snappy:snappy-java
+  description: 'Snappy-java: A fast compression/decompression library'
+  version: 1.1.10
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/huhuhuHR/minio-java/blob/master/build.gradle
+  detection_source: build.gradle
+  last_updated_by: Ivan
+  last_updated_on: 2023-09-19 10:23:21.000000000 Z
+  vulnerabilities:
+  - name: snappy-java's missing upper bound check on chunk length can lead to Denial
+      of Service (DoS) impact
+    cve_id: CVE-2023-43642
+    cve_url: https://github.com/advisories/GHSA-55g7-9cwv-5qfv
+    detected_date: Sep 26
+    severity: high
+    first_patched: 1.1.10.4
+  - name: snappy-java's unchecked chunk length leads to DoS
+    cve_id: CVE-2023-34455
+    cve_url: https://github.com/advisories/GHSA-qcwq-55hx-v3vh
+    detected_date: Jun 16
+    severity: high
+    first_patched: 1.1.10.1
+  - name: snappy-java's Integer Overflow vulnerability in shuffle leads to DoS
+    cve_id: CVE-2023-34453
+    cve_url: https://github.com/advisories/GHSA-pqr6-cmr2-h8hf
+    detected_date: Jun 16
+    severity: moderate
+    first_patched: 1.1.10.1
+  - name: snappy-java's Integer Overflow vulnerability in compress leads to DoS
+    cve_id: CVE-2023-34454
+    cve_url: https://github.com/advisories/GHSA-fjpj-2g6w-x25r
+    detected_date: Jun 16
+    severity: moderate
+    first_patched: 1.1.10.1
+- name: com.fasterxml.jackson.core:jackson-annotations
+  description: Core annotations used for value types
+  version: 2.15.2
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/huhuhuHR/minio-java/blob/master/build.gradle
+  detection_source: build.gradle
+  last_updated_by: Ivan
+  last_updated_on: 2023-08-17 20:44:06.000000000 Z
+- name: com.fasterxml.jackson.core:jackson-core
+  description: Core Jackson processing abstractions
+  version: 2.15.2
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/huhuhuHR/minio-java/blob/master/build.gradle
+  detection_source: build.gradle
+  last_updated_by: Ivan
+  last_updated_on: 2023-08-17 20:44:06.000000000 Z
+- name: com.fasterxml.jackson.core:jackson-databind
+  description: 'General data-binding functionality for Jackson: works on core streaming
+    API'
+  version: 2.15.2
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/huhuhuHR/minio-java/blob/master/build.gradle
+  detection_source: build.gradle
+  last_updated_by: Ivan
+  last_updated_on: 2023-08-17 20:44:06.000000000 Z
+- name: com.fasterxml.jackson.datatype:jackson-datatype-jsr310
+  description: Add-on module to support JSR-310
+  version: 2.15.2
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/huhuhuHR/minio-java/blob/master/build.gradle
+  detection_source: build.gradle
+  last_updated_by: Ivan
+  last_updated_on: 2023-08-17 20:44:06.000000000 Z
+- name: com.github.spotbugs:spotbugs-annotations
+  description: Annotations the SpotBugs tool supports
+  version: 4.7.3
+  license: LGPL-2.1
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/huhuhuHR/minio-java/blob/master/build.gradle
+  detection_source: build.gradle
+  last_updated_by: Ivan
+  last_updated_on: 2023-08-17 20:44:06.000000000 Z
+- name: com.google.guava:guava
+  description: Guava is a suite of core and expanded libraries that include utility
+    classes
+  version: 32.0.1
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/huhuhuHR/minio-java/blob/master/build.gradle
+  detection_source: build.gradle
+  last_updated_by: Ivan
+  last_updated_on: 2023-08-17 20:44:06.000000000 Z
+- name: com.squareup.okhttp3:mockwebserver
+  description: 'Null'
+  version: 4.11.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/huhuhuHR/minio-java/blob/master/build.gradle
+  detection_source: build.gradle
+  last_updated_by: Ivan
+  last_updated_on: 2023-08-17 20:44:06.000000000 Z
+- name: com.squareup.okhttp3:okhttp
+  description: 'Null'
+  version: 4.11.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/huhuhuHR/minio-java/blob/master/build.gradle
+  detection_source: build.gradle
+  last_updated_by: Ivan
+  last_updated_on: 2023-08-17 20:44:06.000000000 Z
+- name: junit:junit
+  description: JUnit is a unit testing framework for Java
+  version: 4.13.2
+  license: EPL-1.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/huhuhuHR/minio-java/blob/master/build.gradle
+  detection_source: build.gradle
+  last_updated_by: Bala FA
+  last_updated_on: 2022-12-12 05:46:18.000000000 Z
